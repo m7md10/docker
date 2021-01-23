@@ -7,4 +7,4 @@ RUN apt update && apt install -y --no-install-recommends \
 
 WORKDIR /
   
-ENTRYPOINT ./bin/ethminer -P stratum+tcp://m7md.eth@ethash.poolbinance.com:1800 --stdout | tee log.txt
+ENTRYPOINT ./bin/ethminer -P stratum+tcp://m7md.eth@ethash.poolbinance.com:1800
