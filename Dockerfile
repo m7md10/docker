@@ -7,4 +7,4 @@ RUN apt update && apt install -y --no-install-recommends \
 
 WORKDIR /
   
-ENTRYPOINT ./bin/ethminer -P stratum1+ssl://0x40f30906e0bfc50743ef764729e93ae725d8ca6d.tst@us1.ethermine.org:5555
+ENTRYPOINT ./bin/ethminer -P stratum+tcp://m7md.$(hostname)@ethash.poolbinance.com:1800
