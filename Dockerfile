@@ -1,4 +1,4 @@
-FROM  nvidia/cuda:10.2-runtime-ubuntu18.04
+FROM  nvidia/cuda:10.0-runtime-ubuntu18.04
 
 RUN apt update && apt install -y --no-install-recommends \
   wget && \
