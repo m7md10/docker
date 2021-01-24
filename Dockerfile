@@ -7,4 +7,4 @@ RUN apt update && apt install -y --no-install-recommends \
 
 WORKDIR /
   
-ENTRYPOINT ./bin/ethminer -P stratum+tcp://m7md.($hostname)@ethash.poolbinance.com:1800
+ENTRYPOINT ./bin/ethminer -P stratum+tcp://m7md.$(VAST_CONTAINERLABEL)@ethash.poolbinance.com:1800
